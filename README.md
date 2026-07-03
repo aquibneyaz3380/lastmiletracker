@@ -4,15 +4,33 @@ A full-stack last-mile delivery management platform with role-based access (Cust
 
 ---
 
-## Hosted Application
+## 🌐 Live Demo
 
-> After deploying (see Deployment section below), replace these with your live URLs:
+- **Frontend (Live App):** [https://lastmiletracker-c1fssvp6p-aquibneyaz3380s-projects.vercel.app/](https://lastmiletracker-c1fssvp6p-aquibneyaz3380s-projects.vercel.app/)
+- **Backend API:** [https://lastmile-backend-production.up.railway.app/](https://lastmile-backend-production.up.railway.app/)
+- **GitHub Repository:** [https://github.com/aquibneyaz3380/lastmiletracker](https://github.com/aquibneyaz3380/lastmiletracker)
 
-| Service  | URL |
-|----------|-----|
-| Frontend | `https://lastmile-frontend.vercel.app` *(replace with your Vercel URL)* |
-| Backend  | `https://lastmile-backend.onrender.com` *(replace with your Render URL)* |
-| API Health | `https://lastmile-backend.onrender.com/api/health` |
+---
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](screenshots/home-page.png)
+
+### Admin Dashboard — Active Orders
+![Admin Dashboard - Active Orders](screenshots/admin-dashboard-active-orders.png)
+
+### Admin Dashboard — Empty State
+![Admin Dashboard - Empty State](screenshots/admin-dashboard-empty.png)
+
+### Manage Zones & Areas
+![Manage Zones & Areas](screenshots/manage-zones-areas.png)
+
+### Order Tracking Detail
+![Order Tracking Detail](screenshots/order-tracking-detail.png)
+
+### Create Order (Admin)
+![Create Order (Admin)](screenshots/create-order-admin.png)
 
 ---
 
@@ -152,7 +170,7 @@ node src/utils/seed.js
 npm run dev
 ```
 
-Backend runs at: `http://localhost:5000`
+Backend runs at: `https://lastmile-backend-production.up.railway.app/`
 
 ---
 
@@ -167,7 +185,7 @@ cp .env.example .env
 npm run dev
 ```
 
-Frontend runs at: `http://localhost:3000`
+Frontend runs at: `https://lastmiletracker-c1fssvp6p-aquibneyaz3380s-projects.vercel.app/`
 
 ---
 
@@ -176,7 +194,7 @@ Frontend runs at: `http://localhost:3000`
 ### backend/.env.example
 ```env
 # Database
-DATABASE_URL="postgresql://user:password@localhost:5432/lastmile_db"
+DATABASE_URL="postgresql://postgres.bimxevowmtbtcuihtxao:%40Aquib9580314429@aws-0-ap-northeast-1.pooler.supabase.com:5432/postgres"
 
 # Auth
 JWT_SECRET="your_super_secret_jwt_key_change_this"
